@@ -19,7 +19,7 @@
         </ul>
     </nav>
     <div class="btn-New">
-        <a href="Financas.php">
+        <a href="../index.html">
             <i>
                 <i class="fa-solid fa-arrow-left"></i>
                 Voltar
