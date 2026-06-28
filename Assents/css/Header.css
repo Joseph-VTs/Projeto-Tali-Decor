@@ -8,18 +8,26 @@ header{
     .Logo{
         width: 72px;
         height: 72px;
-        background-color: transparent;
-        
+        transition: transform 0.4s ease-in;
+
         img{
             width: 100%;
             height: 100%;
             border-radius: 50%;
+            pointer-events: none;
+        }
+
+        &:hover{
+            transform: scale(1.08);
+            cursor: pointer;
         }
     }
+    
     nav{
         width: 100%;
 
         ul{
+            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -32,7 +40,7 @@ header{
                 padding: 6px 16px;
                 background-color: var(--Cor-Primaria);
                 border-radius: var(--px-6);
-                transition: all 0.3s ease-in;
+                transition: transform 0.4s ease-in;
 
                 &:hover{
                     background-color: var(--Branco);
@@ -42,8 +50,9 @@ header{
             }
         }
     }
-    .btn-New{
-        justify-self: center;
+
+    .btn-Header-Acao{
+        align-items: center;
 
         a{
             background-color: var(--Azun);
@@ -53,13 +62,12 @@ header{
             box-shadow: var(--Box-Shadow);
             font-weight: 700;
             font-size: 1.02rem;
-            transition: all 0.4s ease;
             display: flex;
             align-items: center;
             justify-content: space-around;
+            transition: transform 0.4s ease-in;
 
             &:hover{
-                /* background-color: aqua; */
                 cursor: pointer;
                 transform: scale(1.02);
             }

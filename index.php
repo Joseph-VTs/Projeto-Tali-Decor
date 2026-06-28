@@ -25,17 +25,17 @@
         </div>
         <nav>
             <ul>
-                <a href="Pages/Financas.html">Financas</a>
+                <a href="Pages/Financas.php">Financas</a>
                 <a href="Pages/Nova_Reserva.php">Nova Reserva</a>
                 <a href="#">Opção</a>
                 <a href="#">Opção</a>
                 <a href="#">Opção</a>
             </ul>
         </nav>
-        <div class="btn-New">
+        <div class="btn-Header-Acao">
             <a href="#">
                 <i>
-                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-x"></i>
                     Sair
                 </i>
             </a>

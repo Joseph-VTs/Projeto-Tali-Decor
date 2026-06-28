@@ -10,8 +10,6 @@
 
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="../Assents/css/Global.css">
-    <link rel="stylesheet" href="../Assents/css/Header.css">
-    <link rel="stylesheet" href="../Assents/css/Footer.css">
     <link rel="stylesheet" href="../Assents/css/Financas.css">
 
     <!-- Script Estilos de Entrada -->
@@ -19,28 +17,11 @@
 </head>
 
 <body>
-    <header>
-        <div class="Logo">
-            <img src="../Assents/imagens/logo-doce-sonho.jpeg" alt="Logo">
-        </div>
-        <nav>
-            <ul>
-                <a href="#">Meus Kits</a>
-                <a href="#">Concluidas</a>
-                <a href="#">Em aberto</a>
-                <a href="#">Opção</a>
-                <a href="#">Opção</a>
-            </ul>
-        </nav>
-        <div class="btn-New">
-            <a href="Nova_Reserva.html">
-                <i>
-                    <i class="fa-solid fa-plus"></i>
-                    Novo
-                </i>
-            </a>
-        </div>
-    </header>
+    <?php 
+        $link_personalizado = "Nova_Reserva.php";
+        $texto_personalizado = '<i class="fa-solid fa-plus"></i> Novo';
+        include('../Layouts/Header.php');
+    ?>
 
     <main>
         <section class="Financas">
@@ -164,31 +145,7 @@
         </section>
     </main>
 
-    <footer>
-        <div class="Footer-Main">
-            <div class="Footer-Container">
-                <h3>Joseph-VTs</h3>
-                <p>Criando conteúdos incríveis para a web.</p>
-            </div>
-
-            <div class="Footer-col">
-                <h4>Criador do Sistema</h4>
-                <div class="Social-Links">
-                    <a href="https://www.linkedin.com/in/joseph-vts-98460a35a/" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Joseph-VTs" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/dev.jvt_tech/" target="_blank"><i
-                            class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 Joseph-VTs. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+    <?php require_once '../Layouts/Footer.php' ?>
 </body>
 
 </html>
