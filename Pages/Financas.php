@@ -8,8 +8,9 @@
     <!-- Mobiler First -->
     
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="../Assents/css/Financas.css">
     <link rel="stylesheet" href="../Assents/css/Global.css">
+    <link rel="stylesheet" href="../Assents/css/Header.css">
+    <link rel="stylesheet" href="../Assents/css/Financas.css">
 
     <!-- Script Estilos de Entrada -->
     <script src="https://kit.fontawesome.com/9543fb2281.js" crossorigin="anonymous"></script>
@@ -21,15 +22,20 @@
         </div>
         <nav>
             <ul>
-                <a href="#" rel="next">Meus Kits</a>
-                <a href="#" rel="next">Concluidas</a>
-                <a href="#" rel="next">Em aberto</a>
-                <a href="#" rel="next">Opção</a>
-                <a href="#" rel="next">Opção</a>
+                <a href="#">Meus Kits</a>
+                <a href="#">Concluidas</a>
+                <a href="#">Em aberto</a>
+                <a href="#">Opção</a>
+                <a href="#">Opção</a>
             </ul>
         </nav>
         <div class="btn-New">
-            <a href="#" rel="next"><i class="fa-solid fa-plus"></i> Novo</a>
+            <a href="Nova_Reserva.php">
+                <i>
+                    <i class="fa-solid fa-plus"></i>
+                    Novo
+                </i>
+            </a>
         </div>
     </header>
 
@@ -55,12 +61,17 @@
 
         <section class="Pesquisa-Ordenar">
             <div class="Container-Busca">
-                <input type="button" value="" class="Lupa fa-solid fa-magnifying-glass">
+                <i class="Lupa fa-solid fa-magnifying-glass"></i>
                 <input type="text" class="Barra">
             </div>
 
             <div class="Ordenar">
-                <button>Retirar em <i class="fa-solid fa-up-down"></i></button>
+                <button>
+                    <i>
+                        Retirar em
+                        <i class="fa-solid fa-up-down"></i>
+                    </i>
+                </button>
             </div>
         </section>
 
@@ -98,7 +109,10 @@
                     <td>01.01.2001 <i class="fa-solid fa-right-long"></i> 01.01.2001</td>
                     <td>
                         <button style="color: var(--Destaque-Atencao);">
-                            <i class="fa-solid fa-file-signature"></i> <p>Anexar</p>
+                            <i>
+                                <i class="fa-solid fa-file-signature"></i>
+                                Anexar
+                            </i>
                         </button>
                     </td>
                     <td style="color: var(--Destaque-Atencao);">Parcial</td>
@@ -130,7 +144,10 @@
                     <td>01.01.2001 <i class="fa-solid fa-right-long"></i> 01.01.2001</td>
                     <td>
                         <button style="color: var(--Destaque-Sucesso);">
-                            <i class="fa-solid fa-file-signature"></i> <p>Assinado</p>
+                            <i>
+                                <i class="fa-solid fa-file-signature"></i>
+                                Assinado
+                            </i>
                         </button>
                     </td>
                     <td style="color: var(--Destaque-Sucesso);">Pago</td>
@@ -144,8 +161,6 @@
         </section>
     </main>
 
-    <footer>
-
-    </footer>
+    <?php require_once '../Layouts/Footer.php' ?>
 </body>
 </html>

@@ -1,0 +1,141 @@
+body{
+    /* overflow: hidden; */
+
+    .Container{
+        background-color: oklch(from var(--Azun) 0.72 c h );
+        padding: var(--px-12);
+        max-height: 120vh;
+        min-height: 90vh;
+        
+        form{
+            display: grid;
+            grid-template-columns: 4fr 3fr;
+            gap: 24px;
+            
+            .Formulario-LD{
+                color: var(--Preto);
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                justify-self: center;
+                gap: var(--px-8);
+                width: 100%;
+
+                > fieldset:first-child{
+                    grid-column: span 2;
+                }
+
+
+                .Info-Fieldset{
+                    width: 100%;
+                    border: 2px solid currentColor;
+                    border-radius: var(--px-8);
+                    padding: var(--px-8);
+                    background-color: oklch(from var(--Azun) 0.84 c h );
+
+                    #btn-Salvar, #btn-Cancelar{
+                        display: none;
+                    }
+
+                    legend{
+                        font-size: 1.3rem;
+                        font-weight: 700;
+                        letter-spacing: 0.6px;
+                        border-radius: var(--px-6);
+                        padding: var(--px-4);
+                        background-color: oklch(from var(--Azun) 0.72 c h );
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        padding: var(--px-8);
+                        gap: var(--px-6);
+
+                        label{
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                            letter-spacing: 0.4px;
+
+                        }
+
+                        input, select{
+                            border-left: 4px solid lightsteelblue;
+                            border-bottom: 2px solid lightsteelblue;
+                            border-radius: var(--px-6);
+                            letter-spacing: 0.4px;
+                            transition: all 0.5s ease;
+                            height: 2em;
+                            padding: var(--px-4);
+
+                            &:focus{
+                                box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px 0.2px;
+                            }
+                            &:hover{
+                                transform: scale(1.02);
+                            }
+                        }
+
+                        button{
+                            padding: var(--px-6) var(--px-12);
+                            border-radius: var(--px-6);
+                            transition: all 0.5s ease;
+                            background-color: var(--Branco);
+
+                            &:hover{
+                                transform: scale(1.02);
+                                cursor: pointer;
+                                background-color: oklch(from currentColor 0.92 c h);
+                            }
+                        }
+                    }
+                }
+            }
+            .Previa-LE{
+                background-color: oklch(from var(--Azun) 0.84 c h );
+                padding: var(--px-8);
+                border: 2px solid var(--Preto);
+                border-radius: var(--px-8);
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                width: 100%;
+
+                .img{
+                    width: 300px;
+                    img{
+                        width: 100%;
+                        border-radius: var(--px-6);
+                    }
+                }
+
+                .Infos{
+                    padding: var(--px-8);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 32px;
+
+                    div{
+                        
+                        legend{
+                            font-size: 1.4rem;
+                            font-weight: 700;
+                            color: darkblue;
+                        }
+
+                        p{
+                            font-size: 1.2rem;
+                            font-weight: 700;
+                            color: var(--Preto);
+
+                            i{
+                                font-weight: 500;
+                                font-size: 1rem;
+                                color: blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

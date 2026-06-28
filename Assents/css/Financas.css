@@ -1,65 +1,6 @@
 body{
     background-color: var(--Cor-Primaria);
 
-    header{
-        background-color: var(--Cor-Secundaria);
-        display: grid;
-        grid-template-columns: 1fr 8fr 1fr;
-        align-items: center;
-        padding: var(--px-12);
-
-        .Logo{
-            width: 72px;
-            height: 72px;
-            background-color: transparent;
-            
-            img{
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-            }
-        }
-        nav{
-            width: 100%;
-
-            ul{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-
-                a{
-                    color: var(--Preto);
-                    font-weight: 700;
-                    font-size: 0.9rem;
-                    padding: 6px 16px;
-                    background-color: var(--Cor-Primaria);
-                    border-radius: var(--px-6);
-                    transition: all 0.3s ease-in;
-
-                    &:hover{
-                        background-color: var(--Branco);
-                        cursor: pointer;
-                        transform: scale(1.02);
-                    }
-                }
-            }
-        }
-        .btn-New{
-            justify-self: center;
-
-            a{
-                background-color: var(--Azun);
-                padding: 8px 24px;
-                border-radius: 8px;
-                color: var(--Branco);
-                box-shadow: var(--Box-Shadow);
-                font-weight: 700;
-                font-size: 1.02rem;
-            }
-        }
-    }
-
     main{
         .Financas{
             width: 100%;
@@ -116,9 +57,13 @@ body{
                     background-color: transparent;
                     padding: 6px 16px;
                     transition: all 0.5s ease;
+                    margin-right: var(--px-6);
+                    font-style: normal;
+                    transition: all 0.3s ease;
 
                     &:hover{
                         cursor: pointer;
+                        transform: scale(1.02);
                     }
                 }
             }
@@ -139,6 +84,12 @@ body{
                         transform: scale(1.02);
                         cursor: pointer;
                         background-color: rgba(255, 255, 255, 0.4);
+                    }
+
+                    i{
+                        pointer-events: none;
+                        margin-right: var(--px-6);
+                        font-style: normal;
                     }
                 }
             }
@@ -190,9 +141,10 @@ body{
                             display: flex;
                             gap: var(--px-8);
 
-                            i, p{
+                            i{
                                 pointer-events: none;
                                 margin-right: var(--px-6);
+                                font-style: normal;
                             }
 
                             &:hover{
