@@ -108,7 +108,7 @@
                         <button type="button" id="btn-Ver-Previa">Ver Prévia</button>
                     </div>
                     <div>
-                        <button type="submit" name="btn-Salvar" id="btn-Salvar">Salvar como nova Reserva</button>
+                        <button type="submit" name="btn-Salvar-Reserva" id="btn-Salvar">Salvar como nova Reserva</button>
                         <button type="reset" id="btn-Cancelar">Cancelar - Reescrever as Informações</button>
                     </div>
                 </fieldset>

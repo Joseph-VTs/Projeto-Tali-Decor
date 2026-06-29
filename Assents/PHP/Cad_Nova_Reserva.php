@@ -1,7 +1,7 @@
 <?php 
     require_once('database.php');
 
-    if(isset($_POST['btn-Salvar'])){
+    if(isset($_POST['btn-Salvar-Reserva'])){
         // info do Kit
         $caminho_img = $_POST['img_kit'];
         $nome_kit = $_POST['Nome_Kit'];
