@@ -16,14 +16,14 @@
         $data_devolucao = $_POST['Data_Devolucao'];
 
         // Info de Pagamento
-        $valor_aluguel = $_POST['Valor_Aluguel'];
-        $valor_pago = $_POST['Valor_Pago'];
-        $valor_devido = $_POST['Valor_Devido'];
+        $valor_aluguel = str_replace(',', '.', $_POST['Valor_Aluguel']);
+        $valor_pago = str_replace(',', '.', $_POST['Valor_Pago']);
+        $valor_devido = str_replace(',', '.', $_POST['Valor_Devido']);
 
         $db_pdo = Conectar_DB();
 
         $sql = "INSERT INTO kits_reservados (url_imagem, nome_kit, tipo_kit, nome_cliente, contato_cliente, data_retirada, data_devolucao, valor_aluguel, valor_pago, valor_devido)
-                VALUES (:url_imagem, :nome_kit, :tipo_kit, :nome_cliente, :contato_cliente, :data_retirada, ;data_devolucao, :valor_aluguel, ;valor_pago, ;valor_devido)";
+                VALUES (:url_imagem, :nome_kit, :tipo_kit, :nome_cliente, :contato_cliente, :data_retirada, :data_devolucao, :valor_aluguel, :valor_pago, :valor_devido)";
 
         $stmt = $db_pdo->prepare($sql);
         $stmt->execute([
@@ -33,10 +33,10 @@
             ':nome_cliente' => $nome_cliente,
             ':contato_cliente' => $contato_cliente,
             ':data_retirada' => $data_retirada,
-            ';data_devolucao' => $data_devolucao,
+            ':data_devolucao' => $data_devolucao,
             ':valor_aluguel' => $valor_aluguel,
-            ';valor_pago' => $valor_pago,
-            ';valor_devido' => $valor_devido
+            ':valor_pago' => $valor_pago,
+            ':valor_devido' => $valor_devido
         ]);
 
         header('Location: ../../Pages/Financas.php');
