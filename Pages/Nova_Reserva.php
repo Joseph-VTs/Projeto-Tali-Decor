@@ -24,7 +24,7 @@
     ?>
 
     <div class="Container">
-        <form action="" method="" enctype="multipart/form-data" id="Formulario-Reservas">
+        <form action="../Assents/PHP/Cad_Nova_Reserva.php" method="post" enctype="multipart/form-data" id="Formulario-Reservas">
             <div class="Formulario-LD">
                 <!-- Informações do kit. Produto que será vendido -->
                 <fieldset class="Info-Fieldset">
